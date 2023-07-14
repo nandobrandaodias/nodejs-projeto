@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const PORT = 3000
 var sayName = require("./nome")
+const conexao = require("./teste")
 
 app.get('/', function(req, res){
     res.sendFile(__dirname + "/html/index.html")
